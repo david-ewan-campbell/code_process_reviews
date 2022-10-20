@@ -9,6 +9,10 @@ describe('leap_year?') do
   it("returns true for years divisible by 4") do
     expect(leap_year?(2024)).to(eq(true))
   end
+
+  it("returns false if year is divisible by 100") do
+    expect(leap_year?(1900)).to(eq(false))
+  end
 end
 
 # Not adding ends automatically?
@@ -20,4 +24,6 @@ Step 3. However if divisible by 400 also a leap year
 
 # Remember to run rspec tests from main folder - 
 # 1st test should give 'No method error'
-# 2nd test - Adding empty method to lib file gives a different 'nil error'
+# Adding empty method to lib file gives a different 'nil error'
+# Add hard coded 'false' return passes test
+# 2nd test passing for years divisible by 4 by adding if/else statement
