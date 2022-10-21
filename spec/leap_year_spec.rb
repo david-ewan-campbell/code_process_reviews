@@ -13,6 +13,10 @@ describe('leap_year?') do
   it("returns false if year is divisible by 100") do
     expect(leap_year?(1900)).to(eq(false))
   end
+
+  it("returns true if year is divisible by 400") do
+    expect(leap_year?(2000)).to(eq(true))
+  end
 end
 
 # Not adding ends automatically?
