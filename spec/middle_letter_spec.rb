@@ -2,7 +2,8 @@ require('rspec')
 require('middle_letter')
 
 describe('get_middle') do
-  it("returns the middle letter of a word if word is even in length") do
-    expect(get_middle('word')).to(eq("ph"))
+  middleletter = MiddleLetter.new
+  it("returns the middle letters of a word when word is even in length") do
+    expect(middleletter.get_middle('elephant')).to(eq("ph"))
   end
 end
