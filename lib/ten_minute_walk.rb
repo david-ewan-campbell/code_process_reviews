@@ -1,3 +1,6 @@
-def ten_minute_walk(walk)
-   true
+class TenMinuteWalk
+
+  def tenminutewalk(walk)
+    true
+  end
 end
